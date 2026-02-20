@@ -3,4 +3,5 @@ pip==26.0.1
 sqlparse==0.5.5 
 asgiref==3.11.1 
 python-decouple
+pillow
  
