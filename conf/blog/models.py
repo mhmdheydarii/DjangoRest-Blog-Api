@@ -18,7 +18,7 @@ class Post(models.Model):
         return self.title
     
     def get_snippet(self):
-        return self.content[0:5]
+        return self.content[:90]
 
     
     class Meta:

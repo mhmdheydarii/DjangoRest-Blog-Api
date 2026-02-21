@@ -4,4 +4,7 @@ sqlparse==0.5.5
 asgiref==3.11.1 
 python-decouple
 pillow
- 
+djangorestframework==3.16.1
+markdown== 3.10.2
+django-filter==25.2
+faker==40.4.0
