@@ -25,6 +25,8 @@ class PostSerializer(serializers.ModelSerializer):
             rep.pop("content", None)
         return rep
 
+
+
 class CommentSerializer(serializers.ModelSerializer):
 
     class Meta:
