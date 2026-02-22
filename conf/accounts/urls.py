@@ -3,4 +3,6 @@ from .views import *
 
 app_name = 'accounts'
 
-urlpatterns = []
+urlpatterns = [
+    path('api/v1/', include('api.v1.urls'))
+]
