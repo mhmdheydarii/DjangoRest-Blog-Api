@@ -9,3 +9,4 @@ markdown== 3.10.2
 django-filter==25.2
 faker==40.4.0
 def-yasg==1.21.14
+djangorestframework-simplejwt==5.5.1
