@@ -15,5 +15,7 @@ urlpatterns = [
     # get new access from refresh token
     path('refresh/', TokenRefreshView.as_view(), name='refresh'),
     # check token
-    path('verify/', TokenVerifyView.as_view(), name='verify')
+    path('verify/', TokenVerifyView.as_view(), name='verify'),
+    # change password
+    path('change-password/', views.ChangePasswordView.as_view(), name='change_password')
 ]
