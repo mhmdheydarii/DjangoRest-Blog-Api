@@ -8,8 +8,12 @@ from . import views
 app_name = 'api'
 
 urlpatterns = [
+    # reistration 
     path('register/', views.UserRegistrationView.as_view(), name='register'),
-    path('login/', TokenObtainPairView.as_view(), name='login'),
+    # create access and refresh token
+    path('login/', views.CustomTokenObtainPairView.as_view(), name='login'),
+    # get new access from refresh token
     path('refresh/', TokenRefreshView.as_view(), name='refresh'),
+    # check token
     path('verify/', TokenVerifyView.as_view(), name='verify')
 ]
