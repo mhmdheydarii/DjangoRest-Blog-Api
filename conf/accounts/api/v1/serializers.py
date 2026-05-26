@@ -57,3 +57,11 @@ class ChangePasswordSerializer(serializers.Serializer):
             raise serializers.ValidationError({'password': list(e.messages)})
         
         return super().validate(attrs)
+    
+
+class ProfileSerializer(serializers.ModelSerializer):
+    email = serializers.CharField(source='user.email', read_only=True)
+
+    class Meta:
+        model = Profile
+        fields = ['email', 'first_name', 'last_name', 'image', 'description']

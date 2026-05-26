@@ -17,5 +17,8 @@ urlpatterns = [
     # check token
     path('verify/', TokenVerifyView.as_view(), name='verify'),
     # change password
-    path('change-password/', views.ChangePasswordView.as_view(), name='change_password')
+    path('change-password/', views.ChangePasswordView.as_view(), name='change_password'),
+    # profile
+    path('profile/', views.ProfileView.as_view(), name='profile'),
+    
 ]
